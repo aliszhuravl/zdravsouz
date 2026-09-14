@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=77dc28d4-690d-41be-8dc9-157768aa7e38&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Здравсоюз</title>
+</head>
+<body>
+<div class="page-container page-about page-subpage">
+    <header class="header">
+        <div class="header__inner">
+            <div class="burger">
+                <button class="hamburger" id="burger">
+                    <span></span>
+                </button>
+            </div>
+            <div class="menu">
+                <div class="nav__link"><a href="about.html" class="link link_menu">Здравсоюз</a></div>
+                <div class="nav__link"><a href="shop.html" class="link link_menu">Клубная карта</a></div>
+                <div class="nav__link"><a href="group.html" class="link link_menu">Групповые программы</a></div>
+                <div class="nav__link"><a href="children.html" class="link link_menu">Детский клуб</a></div>
+            </div>
+          <a class="logo" href="index.html">
+              <img src="img/logo.svg" alt="#">
+          </a>
+            <div class="right">
+                <div class="lk_link"><a href="#" class="lk_link_link"><img src="img/lk.svg" alt="#"><span>Личный кабинет</span></a></div>
+                <div class="phone_link"><a href="tel:88142220555" class="phone_link_link">8 (8142) 220-555</a></div>
+            </div>
+        </div>
+    </header>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+                <div class="menu_body">
+                    <ul class="links_list mobile">
+                        <li><a href="index.html" class="link_menu">Главная</a></li>
+                        <li><a href="about.html" class="link_menu">Здравсоюз</a></li>
+                        <li><a href="shop.html" class="link_menu">Клубная карта</a></li>
+                        <li><a href="group.html" class="link_menu">Групповые программы</a></li>
+                        <li><a href="children.html" class="link_menu">Детский клуб</a></li>
+                    </ul>
+                </div>
+                <div class="phone_link"><a href="tel:88142220555" class="phone_link_link">8 (8142) 220-555</a></div>
+            </div>
+        </div>
+    </div>
+    <main class="page">
+        <div class="page__inner page-hero">
+            <div class="video_box">
+                <video autoplay muted loop id="myVideo" class="gym-video">
+                    <source src="img/gym.mp4" type="video/mp4">
+                </video>
+            </div>
+            <section class="page__item hero-item">
+                <div class="hero-item__info">
+                    <ul class="bc"><li><a href="index.html" class="link"><span>Главная</span></a></li> <li><span class="tuda"></span></li><li><p><span>О клубе</span></p></li> </ul>
+                    <h1 class="uppercased">О клубе</h1>
+                </div>
+            </section>
+        </div>
+        <div class="page__inner">
+            <section class="page__item">
+                <div class="page__item_title title-solo">
+                    <h2>Качество и комфорт</h2>
+                </div>
+                <div class="page__item_body adv-outter">
+                    <div class="left">
+                        <div class="advantage_box">
+                            <div class="advantage_box__item">
+                                <img src="img/pin.svg" alt="">
+                                <p class="bold">Удобное расположение</p>
+                                <p class="light">Продуманная инфраструктура и удобное месторасположение</p>
+                            </div>
+                            <div class="advantage_box__item">
+                                <img src="img/gr.svg" alt="">
+                                <p class="bold">Групповые программы</p>
+                                <p class="light">Расписание групповых программ без записи, отмен и перерывов</p>
+                            </div>
+                            <div class="advantage_box__item">
+                                <img src="img/ms.svg" alt="">
+                                <p class="bold">Методическое сопровождение</p>
+                                <p class="light">Уникальная система методического сопровождения занятий в тренажерном зале</p>
+                            </div>
+                            <div class="advantage_box__item">
+                                <img src="img/vent.svg" alt="">
+                                <p class="bold">Система вентиляции</p>
+                                <p class="light">Просторные помещения оснащены интеллектуальной системой вентиляции и дезинфекции воздуха</p>
+                            </div>
+                            <div class="advantage_box__item">
+                                <img src="img/spa.svg" alt="">
+                                <p class="bold">SPA<br> и комфорт</p>
+                                <p class="light">Комфортные раздевалки и душевые с финскими парными</p>
+                            </div>
+                            <div class="advantage_box__item">
+                                <img src="img/gym.svg" alt="">
+                                <p class="bold">Качественное оборудование</p>
+                                <p class="light">Тренажёры и оборудование от ведущих мировых производителей</p>
+                            </div>
+                            <div class="advantage_box__item">
+                                <img src="img/p.svg" alt="">
+                                <p class="bold">Частный<br> паркинг</p>
+                                <p class="light">Охраняемая парковка для гостей клуба</p>
+                            </div>
+                            <div class="advantage_box__item">
+                                <img src="img/sale.svg" alt="">
+                                <p class="bold">Скидки и рассрочки</p>
+                                <p class="light">Гибкая система скидок и рассрочки платежей</p>
+                            </div>
+                            <div class="advantage_box__item">
+                                <img src="img/heart.svg" alt="">
+                                <p class="bold">Гостевой<br> визит в клуб</p>
+                                <p class="light">Гостевой визит для знакомства с клубом </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right adv-right">
+                        <img src="img/girl.png" alt="#">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="page__inner white-bg">
+            <section class="page__item">
+                <div class="page__item_title with-subtitle">
+                    <h2>Тренажерный зал</h2>
+                    <p class="subtitle">Дизайнерский проект в стиле советского неоклассицизма с высокими потолками и панорамными окнами.</p>
+                </div>
+                <div class="page__item_body with-slider">
+                    <div class="slider">
+                        <div class="slider_slide">
+                            <img src="img/01.jpg" alt="#">
+                        </div>
+                        <div class="slider_slide">
+                            <img src="img/01.jpg" alt="#">
+                        </div>
+                        <div class="slider_slide">
+                            <img src="img/01.jpg" alt="#">
+                        </div>
+                        <div class="slider_slide">
+                            <img src="img/01.jpg" alt="#">
+                        </div>
+                        <div class="slider_slide">
+                            <img src="img/01.jpg" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="page__inner">
+            <section class="page__item image-top">
+                <div class="page__item_title with-subtitle">
+                    <h2>Индивидуальный подход</h2>
+                    <p class="bold">Система методического сопровождения занятий в тренажерном зале.</p>
+                </div>
+                <div class="page__item_body training-box">
+                    <div class="left">
+                        <div class="text_container">
+                            <p class="light">Для владельцев клубных карт методический  отдел разрабатывает индивидуальные планы занятий. В зале работают инструкторы, которые помогают освоить технику выполнения упражнений.</p>
+                            <p>Записываться и платить отдельно за услугу не нужно.</p>
+                        </div>
+                        <ul class="list_icons">
+                            <li><img src="img/09.svg" alt=""><p>Функциональное тестирование</p></li>
+                            <li><img src="img/09.svg" alt=""><p>Персональная программа занятий</p></li>
+                            <li><img src="img/09.svg" alt=""><p>Техника выполнения упражнений</p></li>
+                            <li><img src="img/09.svg" alt=""><p>Занятия проводят профессионалы</p></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="img/02.png" alt="#">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="page__inner white-bg">
+            <section class="page__item">
+                <div class="page__item_title with-subtitle with-link">
+                    <div class="left">
+                        <h2>Групповые программы</h2>
+                        <p class="subtitle">Широкий спектр групповых программ без предварительной записи.</p>
+                    </div>
+                    <div class="right">
+                        <a href="group.html" class="link link_right">Смотерть расписание <div class="up"><img src="img/up.svg" alt="up"></div></a>
+                    </div>
+                </div>
+                <div class="page__item_body with-slider">
+                    <div class="slider_group">
+                        <a class="slider_slide" href="#">
+                            <div class="slide_name">Динамичная растяжка</div>
+                            <img src="img/001.jpg" alt="#">
+                        </a>
+                        <a class="slider_slide" href="#">
+                            <div class="slide_name">Здоровая спина</div>
+                            <img src="img/002.jpg" alt="#">
+                        </a>
+                        <a class="slider_slide" href="#">
+                            <div class="slide_name">Растяжка</div>
+                            <img src="img/003.jpg" alt="#">
+                        </a>
+                        <a class="slider_slide" href="#">
+                            <div class="slide_name">Супер-пресс</div>
+                            <img src="img/004.jpg" alt="#">
+                        </a>
+                        <a class="slider_slide" href="#">
+                            <div class="slide_name">Динамичная растяжка</div>
+                            <img src="img/001.jpg" alt="#">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <a class="mobile after-link" href="group.html">Смотреть расписание</a>
+        </div>
+        <div class="page__inner">
+            <section class="page__item">
+                <div class="page__item_title with-subtitle with-link">
+                    <div class="left">
+                        <h2>Детский клуб</h2>
+                        <p class="subtitle">Оставьте Вашего ребенка на занятиях в детском клубе, и он весело и с пользой проведет время, пока вы на занятии.</p>
+                    </div>
+                    <div class="right">
+                        <a href="children.html" class="link link_right">Узнать больше <div class="up"><img src="img/up.svg" alt="up"></div></a>
+                    </div>
+                </div>
+                <div class="page__item_body with-mini-slider">
+                    <div class="left left_slider">
+                        <div class="slider_mini">
+                            <div class="slider_slide">
+                                <img src="img/0001.jpg" alt="#">
+                            </div>
+                            <div class="slider_slide">
+                                <img src="img/0002.jpg" alt="#">
+                            </div>
+                            <div class="slider_slide">
+                                <img src="img/0001.jpg" alt="#">
+                            </div>
+                            <div class="slider_slide">
+                                <img src="img/0002.jpg" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_texted">
+                        <ul class="list_icons">
+                            <li><img src="img/09.svg" alt=""><p>2 зала для занятий</p></li>
+                            <li><img src="img/09.svg" alt=""><p>Отдельная детская раздевалка</p></li>
+                            <li><img src="img/09.svg" alt=""><p>Климат-контроль</p></li>
+                            <li><img src="img/09.svg" alt=""><p>Видеонаблюдение</p></li>
+                            <li><img src="img/09.svg" alt=""><p>Гимнастика, ОФП, Карате</p></li>
+                            <li><img src="img/09.svg" alt=""><p>Игровая для малышей</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <a class="mobile after-link" href="group.html">Узнать больше</a>
+        </div>
+        <div class="page__inner white-bg contacts-box mobile-top-border">
+            <section class="page__item image-top">
+                <div class="page__item_title title-solo">
+                    <h2>Контакты</h2>
+                </div>
+                <div class="page__item_body">
+                    <div class="left">
+                        <div class="contacts_box">
+                            <div class="contacts_box__item">
+                                <p class="bold">г. Петрозаводск, Карельский пр., 19</p>
+                                <p class="light">Адрес клуба</p>
+                            </div>
+                            <div class="contacts_box__item">
+                                <div class="links_tile">
+                                    <div class="link_container">
+                                        <a href="tel:8142220555" class="link link_red bold">(8142) 220-555</a>
+                                        <p class="light">Телефон</p>
+                                    </div>
+                                    <div class="link_container">
+                                        <a href="mailto:zdravsoyuz@yandex.ru" class="link link_red bold">zdravsoyuz@yandex.ru</a>
+                                        <p class="light">Email</p>
+                                    </div>
+                                    <div class="link_container">
+                                        <a href="http:://vk.ru/zdravsoyuz" class="link link_red bold">vk.ru/zdravsoyuz</a>
+                                        <p class="light">Группа VK</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts_box__item">
+                                <p class="bold"><span>ПН–ПТ: 7.30 — 22.00</span> <span>СБ и ВС: 9.00 — 21.00</span></p>
+                                <p class="light">Режим работы клуба</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="img/group.png" alt="#">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="map_container">
+            <div class="map" id="map"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__inner_box">
+                <div class="footer__inner_item logo_footer">
+                    <img src="img/logo.svg" alt="#">
+                </div>
+                <div class="footer__inner_item">
+                    <a href="about.html" class="link">О клубе</a>
+                    <a href="shop.html" class="link">Клубные карты</a>
+                    <a href="group.html" class="link">Групповые программы</a>
+                    <a href="children.html" class="link">Детский клуб</a>
+                </div>
+                <div class="footer__inner_item">
+                    <a href="#" class="link">Политика конфиденциальности</a>
+                    <a href="shop.html" class="link">Согласие на обработку персональных данных</a>
+                    <a href="group.html" class="link">Правила клуба</a>
+                    <a href="children.html" class="link">Оплата и возврат</a>
+                </div>
+                <div class="footer__inner_item">
+                    <div class="footer_right">
+                        <div class="lk_link"><a href="#" class="lk_link_link"><img src="img/lk.svg" alt="#"><span>Личный кабинет</span></a></div>
+                        <div class="phone_link"><a href="tel:88142220555" class="phone_link_link">8 (8142) 220-555</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__inner_bottom">
+                <div class="left">
+                    <p>© 2020—2024 «ЗДРАВСОЮЗ» — фитнес клуб в Петрозаводске</p>
+                    <p class="light">Предложения на сайте не являются публичной офертой</p>
+                </div>
+                <div class="right">
+                    <a class="link link_white" href="http://karelia-it.su" target="_blank"><span>Сделано в</span> <img src="img/karelia.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.modal/jquery.modal.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+                center: [61.774366, 34.296960],
+                zoom: 16
+            }),
+
+
+            // Создаем геообъект с типом геометрии "Точка".
+            myGeoObject = new ymaps.GeoObject({
+                // Описание геометрии.
+                geometry: {
+                    type: "Point",
+                    coordinates: [61.774366, 34.296960]
+                },
+                // Свойства.
+                properties: {
+                    // Контент метки.
+                    // Опции.
+                    // Своё изображение иконки метки.
+                    iconLayout: 'default#image',
+                    iconImageHref: '../web/img/map.png',
+                    // Размеры метки.
+                    iconImageSize: [50, 56],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [0, 0],
+                    balloonContent: 'Солнечная улица, 3'
+                }
+            }, {
+                // Опции.
+                // Иконка метки будет растягиваться под размер ее содержимого.
+                preset: 'twirl#redStretchyIcon',
+                // Метку можно перемещать.
+                draggable: true
+            }),
+
+            // Создаем метку с помощью вспомогательного класса.
+            myPlacemark1 = new ymaps.Placemark([56.332716, 37.517222], {
+                // Контент метки.
+                // Опции.
+                // Своё изображение иконки метки.
+                iconLayout: 'default#image',
+                iconImageHref: '../web/img/map.png',
+                // Размеры метки.
+                iconImageSize: [50, 56],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0],
+                balloonContent: 'Солнечная улица, 3'
+            }, {
+                // Опции.
+                // Стандартная фиолетовая иконка.
+                preset: 'twirl#violetIcon'
+            }),
+
+            myPlacemark2 = new ymaps.Placemark([62.08, 35.21], {
+                // Свойства.
+                hintContent: 'Солнечная улица, 3'
+            }, {
+                // Опции.
+                // Своё изображение иконки метки.
+                iconImageHref: '../web/img/map.png',
+                // Размеры метки.
+                iconImageSize: [50, 70],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0]
+            });
+
+        //myMap.controls.add('smallZoomControl');
+        // Добавляем все метки на карту.
+
+        myMap.geoObjects.add(myPlacemark1)
+            .add(myPlacemark2)
+            .add(myGeoObject);
+
+
+        myMap.behaviors.disable('scrollZoom');
+    }
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=77dc28d4-690d-41be-8dc9-157768aa7e38&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Здравсоюз</title>
+</head>
+<body>
+<div class="page-container page-main page-video">
+    <header class="header">
+        <div class="header__inner">
+            <div class="burger">
+                <button class="hamburger" id="burger">
+                    <span></span>
+                </button>
+            </div>
+            <div class="menu">
+                <div class="nav__link"><a href="about.html" class="link link_menu">Здравсоюз</a></div>
+                <div class="nav__link"><a href="shop.html" class="link link_menu">Клубная карта</a></div>
+                <div class="nav__link"><a href="group.html" class="link link_menu">Групповые программы</a></div>
+                <div class="nav__link"><a href="children.html" class="link link_menu">Детский клуб</a></div>
+            </div>
+          <a class="logo" href="index.html">
+              <img src="img/logo.svg" alt="#">
+          </a>
+            <div class="right">
+                <div class="lk_link"><a href="#" class="lk_link_link"><img src="img/lk.svg" alt="#"><span>Личный кабинет</span></a></div>
+                <div class="phone_link"><a href="tel:88142220555" class="phone_link_link">8 (8142) 220-555</a></div>
+            </div>
+        </div>
+    </header>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+                <div class="menu_body">
+                    <ul class="links_list mobile">
+                        <li><a href="index.html" class="link_menu">Главная</a></li>
+                        <li><a href="about.html" class="link_menu">Здравсоюз</a></li>
+                        <li><a href="shop.html" class="link_menu">Клубная карта</a></li>
+                        <li><a href="group.html" class="link_menu">Групповые программы</a></li>
+                        <li><a href="children.html" class="link_menu">Детский клуб</a></li>
+                    </ul>
+                </div>
+                <div class="phone_link"><a href="tel:88142220555" class="phone_link_link">8 (8142) 220-555</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="video_box">
+        <video autoplay muted loop id="myVideo" class="gym-video">
+            <source src="img/gym.mp4" type="video/mp4">
+        </video>
+    </div>
+    <main class="page">
+        <div class="page__inner">
+            <section class="page__item hero-item">
+                <div class="hero-item__info">
+                    <p class="h1-top">Фитнес-клуб</p>
+                    <h1>Здравсоюз</h1>
+                    <p class="slogan">Движение к здоровью</p>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.modal/jquery.modal.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+                center: [61.774366, 34.296960],
+                zoom: 16
+            }),
+
+
+            // Создаем геообъект с типом геометрии "Точка".
+            myGeoObject = new ymaps.GeoObject({
+                // Описание геометрии.
+                geometry: {
+                    type: "Point",
+                    coordinates: [61.774366, 34.296960]
+                },
+                // Свойства.
+                properties: {
+                    // Контент метки.
+                    // Опции.
+                    // Своё изображение иконки метки.
+                    iconLayout: 'default#image',
+                    iconImageHref: '../web/img/map.png',
+                    // Размеры метки.
+                    iconImageSize: [50, 56],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [0, 0],
+                    balloonContent: 'Солнечная улица, 3'
+                }
+            }, {
+                // Опции.
+                // Иконка метки будет растягиваться под размер ее содержимого.
+                preset: 'twirl#redStretchyIcon',
+                // Метку можно перемещать.
+                draggable: true
+            }),
+
+            // Создаем метку с помощью вспомогательного класса.
+            myPlacemark1 = new ymaps.Placemark([56.332716, 37.517222], {
+                // Контент метки.
+                // Опции.
+                // Своё изображение иконки метки.
+                iconLayout: 'default#image',
+                iconImageHref: '../web/img/map.png',
+                // Размеры метки.
+                iconImageSize: [50, 56],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0],
+                balloonContent: 'Солнечная улица, 3'
+            }, {
+                // Опции.
+                // Стандартная фиолетовая иконка.
+                preset: 'twirl#violetIcon'
+            }),
+
+            myPlacemark2 = new ymaps.Placemark([62.08, 35.21], {
+                // Свойства.
+                hintContent: 'Солнечная улица, 3'
+            }, {
+                // Опции.
+                // Своё изображение иконки метки.
+                iconImageHref: '../web/img/map.png',
+                // Размеры метки.
+                iconImageSize: [50, 70],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0]
+            });
+
+        //myMap.controls.add('smallZoomControl');
+        // Добавляем все метки на карту.
+
+        myMap.geoObjects.add(myPlacemark1)
+            .add(myPlacemark2)
+            .add(myGeoObject);
+
+
+        myMap.behaviors.disable('scrollZoom');
+    }
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
