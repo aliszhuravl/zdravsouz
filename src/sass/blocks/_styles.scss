@@ -410,3 +410,13 @@
     filter: grayscale(100);
   }
 }
+
+.contacts-page {
+  h1 {
+    margin-bottom: 0;
+  }
+  .image-top .right {
+
+    max-width: 50vw;
+  }
+}

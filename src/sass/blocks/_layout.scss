@@ -33,9 +33,51 @@
   }
 }
 
+@media (min-width: 1999px) {
+  .header__inner .menu .nav__link {
+    margin: 12px 20px;
+    .link_menu {
+      font-size: 22px;
+    }
+  }
+  .contacts_box__item .links_tile .link_container .link {
+    font-size: 18px;
+  }
+  .map_container .map {
+    height: 600px;
+  }
+}
+
 @media (min-width: 1599px) {
   .nav__link {
     margin: 1.5rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header__inner .menu .nav__link {
+    margin: 12px;
+    .link_menu {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .header__inner .menu .nav__link {
+    margin: 12px;
+    .link_menu {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .header__inner .menu .nav__link {
+    margin: 12px 6px;
+    .link_menu {
+      font-size: 13px;
+    }
   }
 }
 

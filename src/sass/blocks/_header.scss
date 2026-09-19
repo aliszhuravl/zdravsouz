@@ -48,7 +48,7 @@
 
       .link_menu {
         color: #fff;
-        font-size: calc(13px + (18 - 13) * ((100vw - 1199px) / (1920 - 1199)));
+        font-size: calc(13px + (16 - 13) * ((100vw - 1199px) / (1920 - 1199)));
         font-family: $font-family;
       }
       &:hover {
