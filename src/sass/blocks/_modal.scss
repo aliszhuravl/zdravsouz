@@ -202,3 +202,25 @@
       }
   }
 }
+
+.group_top {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  .g_top {
+    width: 50%;
+    margin-right: 40px;
+    .text_bold {
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+  }
+  .program_img {
+    width: 50%;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

@@ -79,6 +79,17 @@
       font-size: 13px;
     }
   }
+  .group_top {
+    flex-direction: column;
+    .g_top {
+      width: 100%;
+      margin-right: 0;
+    }
+    .program_img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 // планшеты
@@ -669,5 +680,14 @@
     b, a {
       font-size: 14px;
     }
+  }
+  .popup_inner .popup_top p {
+    line-height: 1.2;
+  }
+  .slider .slick-list, .slider_group .slick-list, .slider_mini .slick-list {
+    margin-right: 0;
+  }
+  .slider_group .slider_slide, .slider_slide {
+    margin-right: 0;
   }
 }
