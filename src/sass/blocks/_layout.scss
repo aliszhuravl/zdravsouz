@@ -90,11 +90,76 @@
       margin-bottom: 20px;
     }
   }
+  .pop-photo {
+    .group_top {
+      flex-direction: row;
+      .g_top {
+        width: 50%;
+        margin-right: 32px;
+      }
+      .program_img {
+        width: calc(50% - 32px);
+        margin-bottom:0;
+      }
+    }
+  }
 }
 
 // планшеты
 
 @media (max-width: 1199px) {
+
+
+
+  .pop-photo {
+    .group_top {
+      flex-direction: column;
+      .g_top {
+        width: 100%;
+        margin-right: 0;
+      }
+      .program_img {
+        width: 100%;
+        margin-bottom: 0;
+      }
+      .middle {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .shedule_item {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:nth-child(3n+3) {
+      margin-right: 20px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .page-shedule .tabs__buttons {
+    width: 20%;
+    margin-right: 20px;
+    .tabs__btn {
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .shedule_item .left {
+    font-size: 20px;
+  }
+
+  .shedule_item .right .s-name {
+    font-size: 14px;
+  }
+
+  .shedule_item .right .trainer {
+    font-size: 13px;
+  }
 
   .mobile {
     display: flex;
@@ -689,5 +754,82 @@
   }
   .slider_group .slider_slide, .slider_slide {
     margin-right: 0;
+  }
+
+  .shedule_item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 12px;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .page-shedule .tabs {
+    flex-direction: column;
+    margin-top: 6px;
+  }
+
+  .timing_filters {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .dropdown_filters {
+      margin-bottom: 12px;
+      width: 100%;
+    }
+  }
+
+  .page-shedule .tabs__content {
+    width: 100%;
+  }
+
+  .page-shedule .tabs__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    &::-webkit-scrollbar { display: none };
+    .tabs__btn {
+      width: auto;
+      border-radius: 6px;
+      margin-bottom: 0;
+      margin-right: 12px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .page-shedule .mb-70 {
+    padding-top: 20px;
+  }
+
+  .page-shedule .tabs__buttons .tabs__btn .date {
+    font-size: 18px;
+  }
+
+  .page-shedule .tabs__buttons .tabs__btn .day {
+    font-size: 13px;
+  }
+
+  .shedule_item .left {
+    font-size: 26px;
+  }
+
+  .shedule_item .right .s-name {
+    font-size: 16px;
+  }
+
+  .shedule_item .right .trainer {
+    font-size: 14px;
   }
 }

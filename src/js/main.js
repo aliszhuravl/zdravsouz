@@ -3,3 +3,4 @@
 //= parts/_slick.js
 //= parts/_tabs.js
 //= parts/_burger.js
+//= parts/_dropdown.js

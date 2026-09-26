@@ -224,3 +224,32 @@
     }
   }
 }
+
+.pop-photo {
+  max-width: unset;
+  min-width: 60%;
+}
+
+.popup_inner .middle {
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,.2);
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-top: 12px;
+  .left {
+    margin-right: 20px;
+  }
+  .left, .right {
+    width: 50%;
+  }
+  .time {
+    border-top: none;
+    padding: 0;
+    margin: 0;
+  }
+  .light {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}
